@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>{{ title }}</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, minimal-ui">
+
+    <link rel='stylesheet' href='/dependencies/milligram.css' />
+    <link rel='stylesheet' href='/stylesheets/custom.css' />
+
+    <script src="/socket.io/socket.io.js" defer="true"></script>
+    <script src="/javascripts/notifications.js" defer="true"></script>
+
+  </head>
+  <body>
+  <main>
+    {% block body %}{% endblock %}
+  </main>
+
+    {% block footer %}
+    <section class="container footer">
+      <hr>
+      <img src="/images/logo.gif" class="logo" title="void email" style="max-width: 100px">
+
+      <h4>simple disposable emails</h4>
+
+      <div class="row">
+        <div class="column">
+          <a href="https://github.com/synox/void-mail" target="_blank">Github</a>
+        </div>
+        <div class="column">
+          <a target="_blank" href="https://github.com/synox/void-mail/blob/master/docs/faq.md">FAQ</a>
+        </div>
+      </div>
+    </section>
+    {% endblock %}
+
+
+  </body>
+</html>
